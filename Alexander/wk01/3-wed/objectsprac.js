@@ -2,15 +2,15 @@ console.log("Objects Yay!")
 
 console.log('-------------')
 
-var recipie = {
+var recipe = {
   title: 'Mole',
   servings: 'Serves: 2',
   ingredients: ['Cinnamon', 'Cumin', 'Cocoa']
 }
 
-console.log(recipie.title)
-console.log(recipie.servings)
-console.log('Ingredients: ' + recipie.ingredients)
+console.log(recipe.title)
+console.log(recipe.servings)
+console.log('Ingredients: ' + recipe.ingredients.join('\n             '))
 
 console.log('-------------')
 console.log('-------------')
