@@ -1,0 +1,28 @@
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 60px;
+}
+
+img {
+  display: block;
+  margin-left: 10%;
+}
+
+.functions {
+  display: inline-block;
+  margin: 0 auto;
+}
+
+/*.savings {
+  display: inline-block;
+}
+
+.checking {
+  display: inline-block;
+}*/
