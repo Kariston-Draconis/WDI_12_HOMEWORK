@@ -44,6 +44,10 @@ A3 - document.querySelector('button').addEventListener('click', function() {
   <input type="text" id="favFood"/>
 </html>
 
+----------------------------------------
+A4 - var favouriteColor = document.querySelector('#favCol').value
+----------------------------------------
+
 (5.) Append a paragraph tag to the div with class 'my-articles'.
 
 <html>
@@ -56,6 +60,11 @@ A3 - document.querySelector('button').addEventListener('click', function() {
   </body>
 
 </html>
+
+----------------------------------------
+A5 - var paragraph = document.createElement('p')
+document.querySelector('.my-articles').appendChild(paragraph)
+----------------------------------------
 
 (6.) Write the necessary code to figure out how many list items are in the ul tag below:
 
@@ -76,6 +85,10 @@ A3 - document.querySelector('button').addEventListener('click', function() {
 
 </html>
 
+----------------------------------------
+A6 - document.querySelector('ul').querySelectorAll('li').length
+----------------------------------------
+
 (7.) Write the neccessary code so when the button is clicked a new list item with a random number is appended to the unordered list with the class 'lucky-numbers'
 
 <html>
@@ -89,3 +102,13 @@ A3 - document.querySelector('button').addEventListener('click', function() {
   </body>
 
 </html>
+
+----------------------------------------
+A7 - var btn = document.querySelector('button')
+btn.addEventListener('click', function() {
+  var numberList = document.createElement('li');
+  var number = document.createTextNode(Math.floor(Math.random() * 100));
+  numberList.appendChild(number);
+  document.querySelector('.lucky-numbers').appendChild(numberList)
+})
+----------------------------------------
