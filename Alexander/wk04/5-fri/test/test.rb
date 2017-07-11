@@ -21,3 +21,22 @@ else
   peter.push(*pileThree)
   alfred.push(*startPile)
 end
+
+# could also use:
+# piles = cards.reverse.each_slice(3).to_a
+# players = { alfred: piles.shift, peter: piles.shift }
+
+# with
+# if rand(0..1) == 0
+#   players[:alfred].push(piles.shift).flatten!
+#   players[:peter].push(piles.shift).flatten!
+# else
+#   players[:peter].push(piles.shift).flatten!
+#   players[:alfred].push(piles.shift).flatten!
+# end
+
+# or
+# winner = rand(0..1) == 0 ? :alfred : :peter
+# loser = winner == :alfred ? :peter : :alfred
+# players[winner].push(piles.shift).flatten!
+# players[loser].push(piles.shift).flatten!
