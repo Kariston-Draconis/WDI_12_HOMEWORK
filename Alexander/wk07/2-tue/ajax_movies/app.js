@@ -1,7 +1,7 @@
 var $btn = $('button');
 
 $btn.on('click', function(event) {
-  $('div').empty();
+  $('#stuff').empty();
   var movie = document.querySelector('input').value
   var settings = {
     url: 'http://omdbapi.com/',
@@ -12,10 +12,16 @@ $btn.on('click', function(event) {
     for (var i = 0; i < film.length; i++) {
       var title = film[i].Title;
       var link = title.link("http://www.imdb.com/title/" + film[i].imdbID);
-      var list = document.createElement('li');
+      var list = document.createElement('h2');
       list.innerHTML = link;
-      $('div').append(list)
+      $('#stuff').append(list)
     };
+    // response.Search.forEach(function(movie) {
+    //   var url = 'http://www.imdb.com/title/'+ movie.imdbID;
+    //   var link = $('<a>').attr('href', url).text(movie.Title);
+    //   var heading = $('<h2>').append(link);
+    //   $('#movies').append(heading);
+    // })
     var movies = $('a')
 
     for (var i = 0; i < movies.length; i++) {
